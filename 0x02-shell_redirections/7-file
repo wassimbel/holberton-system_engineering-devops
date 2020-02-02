@@ -1,2 +1,2 @@
 #!/bin/bash
-sort < Holberton School > \*\\'"Holberton School"\'\\*$\?\*\*\*\*\*:)
+ls "Holberton School" >> \*\\'"Holberton School"\'\\*$\?\*\*\*\*\*:)
