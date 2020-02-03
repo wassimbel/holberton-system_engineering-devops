@@ -1,1 +1,1 @@
-read me
+basic commands in shell
