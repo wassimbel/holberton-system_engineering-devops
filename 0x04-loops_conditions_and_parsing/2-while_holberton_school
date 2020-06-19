@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# displays Holberton School 10 times using while loop
+var="Holberton Shcool"
+i=0
+while ((i<10));
+do
+	echo "$var"
+	((i++))
+done

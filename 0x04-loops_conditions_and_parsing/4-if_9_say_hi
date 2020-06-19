@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#displays Holberton School 10 times, but for the 9th iteration,
+#+displays Holberton School and then Hi on a new line
+var="Holberton School"
+var1="Hi"
+i=0
+while ((i<10)); do
+	if ((i==8))
+	then
+	echo "$var1"
+	else
+	echo "$var"
+	fi
+	((i++))
+done

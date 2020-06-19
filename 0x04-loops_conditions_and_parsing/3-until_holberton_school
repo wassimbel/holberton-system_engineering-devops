@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#displays Holberton School 10 times using until
+var="Holberton School"
+i=10
+until ((i<1));
+do
+	echo "$var"
+	((i--))
+done
