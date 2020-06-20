@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # displays Holberton School 10 times using while loop
-var="Holberton Shcool"
+var="Holberton School"
 i=0
 while ((i<10));
 do
