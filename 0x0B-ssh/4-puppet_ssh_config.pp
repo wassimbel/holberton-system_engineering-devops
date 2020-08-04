@@ -9,5 +9,5 @@ file_line { 'passwd auth':
 file_line { 'private key path':
   ensure => 'present',
   path   => '/etc/ssh/ssh_config',
-  line   => 'IdentifyFile ~/.ssh/holberton'
+  line   => 'IdentityFile ~/.ssh/holberton'
 }
