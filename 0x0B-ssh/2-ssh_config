@@ -1,0 +1,3 @@
+# config
+IdentifyFile ~/.ssh/holberton
+PasswordAuthentification no
