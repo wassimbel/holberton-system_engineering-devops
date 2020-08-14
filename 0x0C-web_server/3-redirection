@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # script
-
 sudo apt-get update
 sudo apt-get -y install nginx
 sudo ufw allow 'Nginx HTTP'
@@ -14,5 +13,5 @@ printf %s "server {
         location / redirect_me {
                 return 301 http://www.youtube.com/;
         }
-}" > /etc/nginx/sites-available-default
+}" > /etc/nginx/sites-available/default
 service nginx restart
