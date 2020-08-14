@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# script
+sudo apt-get update
+sudo apt-get -y install haproxy
+echo "ENABLED=1" | sudo tee -a /etc/default/haproxy
+printf %s "
+listen holberton
+        bind *:80
+        mode http
+        balance roundrobin
+        server 1397-web-01 34.229.124.30:80 check
+        server 1397-web-02 34.73.6.154:80 check 
+" >> /etc/haproxy/haproxy.cfg
+sudo service haproxy restart
