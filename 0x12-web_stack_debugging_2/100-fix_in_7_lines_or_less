@@ -4,3 +4,4 @@ pkill nginx
 chmod -R 770 /etc/nginx/nginx.conf
 sed -i "s/80/8080/g" /etc/nginx/sites-available/default
 sudo -u nginx service nginx start
+
