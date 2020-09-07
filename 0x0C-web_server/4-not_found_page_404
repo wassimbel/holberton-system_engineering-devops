@@ -3,7 +3,7 @@
 apt-get -y update
 apt-get -y install nginx
 echo "Holberton School" | sudo tee /usr/share/nginx/html/index.html
-sudo echo "Ceci n'est pas une page" | sudo tee /usr/share/nginx/html/404.html
+echo "Ceci n'est pas une page" | sudo tee /usr/share/nginx/html/404.html
 printf %s "server {
     listen 80;
     listen [::]:80 default_server;
@@ -14,8 +14,8 @@ printf %s "server {
     }
     error_page 404 /404.html;
     location /404 {
-      root /usr/share/nginx/html;
-      internal;
+        root /usr/share/nginx/html;
+        internal;
     }
 }" > /etc/nginx/sites-available/default
 service nginx start
