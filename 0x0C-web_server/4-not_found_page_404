@@ -3,7 +3,8 @@
 sudo apt-get update
 sudo apt-get -y install nginx
 sudo ufw allow 'Nginx HTTP'
-echo "Holberton School" | tee /var/www/html/index.nginx-debian.html
+echo "Holberton School" | sudo tee /var/www/html/index.nginx-debian.html
+echo "Ceci n'est pas une page" | sudo tee /usr/share/nginx/html/404.html
 printf %s "server {
         listen 80;
         listen [::]:80 default_server;
@@ -16,6 +17,6 @@ printf %s "server {
         location /404 {
         root /usr/share/nginx/html;
         internal;
-        } 
+        }
 }"  > /etc/nginx/sites-available/default
 service nginx start
