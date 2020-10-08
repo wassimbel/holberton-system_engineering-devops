@@ -1,3 +1,0 @@
-#!/usr/bin/bash
-# Make gunicorn reread its configuration file:
-pkill -HUP gunicorn
